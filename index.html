@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do-App</title>
+
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/reset.css">
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <h1>To-Do-App</h1>
+            <p>12, Thursday, 2026</p>
+        </header>
+        <main class="main-container">
+            <article class="add-task-container">
+                <form action="" method="post">
+                    <input type="text" name="task" id="task-input">
+                    <button type="submit">Add task</button>
+                </form>
+            </article>
+
+            <article class="info-container">
+                <div class="all-info"></div>
+                <div class="active-info"></div>
+                <div class="done-info"></div>
+            </article>
+            
+            <article class="filter-container">
+                <button type="button" class="all-filter">All</button>
+                <button type="button" class="active-filter">Active</button>
+                <button type="button" class="done-filter">Done</button>
+            </article>
+
+            <article class="task-container"></article>
+
+            <button type="button">Clear complete</button>
+        </main>
+    </div>
+
+    <script src="./scripts/app.js" type="module"></script>
+</body>
+</html>
