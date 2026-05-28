@@ -18,14 +18,14 @@
             <article class="add-task-container">
                 <form action="" method="post">
                     <input type="text" name="task" id="task-input">
-                    <button type="submit">Add task</button>
+                    <button class="add-task-btn" type="submit">Add task</button>
                 </form>
             </article>
 
             <article class="info-container">
-                <div class="all-info"></div>
-                <div class="active-info"></div>
-                <div class="done-info"></div>
+                <div class="all-info">All<span class="task-count">0</span></div>
+                <div class="active-info">Active<span class="active-count">0</span></div>
+                <div class="done-info">Done<span class="done-count">0</span></div>
             </article>
             
             <article class="filter-container">
@@ -34,9 +34,20 @@
                 <button type="button" class="done-filter">Done</button>
             </article>
 
-            <article class="task-container"></article>
+            <article class="task-container">
+                <label class="task-item" for="task1">
+                    <input type="checkbox" name="task1" id="task1">
+                    <span class="custom-checkbox"></span>
+                    Task 1
+                </label>
+                <label class="task-item" for="task2">
+                    <input type="checkbox" name="task2" id="task2">
+                    <span class="custom-checkbox"></span>
+                    Task 2
+                </label>
+            </article>
 
-            <button type="button">Clear complete</button>
+            <button type="button" class="clear-complete-btn">Clear complete</button>
         </main>
     </div>
 
