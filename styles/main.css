@@ -4,6 +4,7 @@
     max-width: 600px;
     padding: 2rem;
     border-radius: 0.5rem;
+    min-width: 215px;
 }
 
 header {
@@ -82,6 +83,11 @@ form {
     background-color: rgb(205, 205, 205);
 }
 
+.selected {
+    background-color: rgb(161, 161, 161);
+    color: white;
+}
+
 .task-container {
     display: flex;
     flex-direction: column;
@@ -127,6 +133,11 @@ form {
 
 .custom-checkbox-checked {
     background-color: rgb(78, 78, 78);
+}
+
+.task-name {
+    width: 65%;
+    overflow-wrap: break-word;
 }
 
 .delete-btn {

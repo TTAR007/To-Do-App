@@ -12,7 +12,7 @@
     <div class="wrap">
         <header>
             <h1>To-Do-App</h1>
-            <p>12, Thursday, 2026</p>
+            <p class="date"></p>
         </header>
         <main class="main-container">
             <article class="add-task-container">
@@ -29,16 +29,16 @@
             </article>
             
             <article class="filter-container">
-                <button type="button" class="all-filter">All</button>
-                <button type="button" class="active-filter">Active</button>
-                <button type="button" class="done-filter">Done</button>
+                <button type="button" class="all-filter selected" data-filter="all">All</button>
+                <button type="button" class="pending-filter" data-filter="pending">Active</button>
+                <button type="button" class="completed-filter" data-filter="completed">Done</button>
             </article>
 
             <article class="task-container">
                 <!-- Tasks will be rendered here -->
             </article>
 
-            <button type="button" class="clear-complete-btn">Clear complete</button>
+            <button type="button" class="clear-complete-btn">Clear completed</button>
         </main>
     </div>
 
