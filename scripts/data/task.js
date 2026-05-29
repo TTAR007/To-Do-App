@@ -1,4 +1,4 @@
-export let Tasks = []
+export let tasks = []
 
 export class Task {
     #id
@@ -22,4 +22,12 @@ export class Task {
     get status() {
         return this.#status
     }
+
+    set status(newStatus) {
+        this.#status = newStatus
+    }
+
+    deleteTask(taskId) {
+        tasks = tasks.filter((task) => task.id !== taskId)
+    } 
 }

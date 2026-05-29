@@ -96,6 +96,7 @@ form {
     border: 1px solid black;
     border-radius: 0.2rem;
     align-items: center;
+    position: relative;
 }
 
 .task-item-checked {
@@ -126,6 +127,28 @@ form {
 
 .custom-checkbox-checked {
     background-color: rgb(78, 78, 78);
+}
+
+.delete-btn {
+    position: absolute;
+    right: 0.8rem;
+    background-color: transparent;
+    border: none;
+    font-size: 0.8rem;
+    color: rgb(207, 0, 0);
+    cursor: pointer;
+    text-decoration: underline transparent;
+    transition: transform 0.2s ease, text-decoration-color 0.2s ease;
+}
+
+.delete-btn:hover {
+    transform: scale(1.1);
+    text-decoration-color: rgb(255, 0, 0);
+}
+
+.delete-btn:active {
+    transform: scale(0.9);
+    text-decoration-color: rgb(255, 0, 0);
 }
 
 .clear-complete-btn {

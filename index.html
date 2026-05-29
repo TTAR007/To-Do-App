@@ -16,8 +16,8 @@
         </header>
         <main class="main-container">
             <article class="add-task-container">
-                <form action="" method="post">
-                    <input type="text" name="task" id="task-input">
+                <form method="post" class="add-task-form">
+                    <input type="text" name="task" id="task-input" placeholder="Add a new task...">
                     <button class="add-task-btn" type="submit">Add task</button>
                 </form>
             </article>
@@ -35,16 +35,7 @@
             </article>
 
             <article class="task-container">
-                <label class="task-item" for="task1">
-                    <input type="checkbox" name="task1" id="task1">
-                    <span class="custom-checkbox"></span>
-                    Do laundry
-                </label>
-                <label class="task-item" for="task2">
-                    <input type="checkbox" name="task2" id="task2">
-                    <span class="custom-checkbox"></span>
-                    Buy groceries
-                </label>
+                <!-- Tasks will be rendered here -->
             </article>
 
             <button type="button" class="clear-complete-btn">Clear complete</button>
