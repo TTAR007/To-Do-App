@@ -94,12 +94,7 @@ document.querySelector(".task-container").addEventListener("click", (e) => {
     if (e.target.classList.contains("delete-btn")) {
         const taskId = e.target.parentElement.querySelector("input").id
 
-        tasks.forEach((task) => {
-            if (task.id === taskId) {
-                task.deleteTask(taskId)
-            }
-        })
-
+        deleteTask(taskId)
         renderTasks()
         console.log(tasks)
     }

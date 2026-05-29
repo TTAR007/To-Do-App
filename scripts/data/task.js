@@ -26,8 +26,8 @@ export class Task {
     set status(newStatus) {
         this.#status = newStatus
     }
-
-    deleteTask(taskId) {
-        tasks = tasks.filter((task) => task.id !== taskId)
-    } 
 }
+
+export function deleteTask(taskId) {
+    tasks = tasks.filter((task) => task.id !== taskId)
+} 
